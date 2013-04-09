@@ -74,7 +74,9 @@ module Classifier
     end
 
     def categories
-        self.items.each{|item| yield self.categories_for item}
+        @items.each do |item| 
+            yield categories_for item
+        end
     end
     
     # Returns the categories for a given indexed items. You are free to add and remove
