@@ -73,12 +73,6 @@ module Classifier
       add_item item
     end
 
-    def categories
-        @items.each do |item| 
-            return categories_for item
-        end
-    end
-    
     # Returns the categories for a given indexed items. You are free to add and remove
     # items from this as you see fit. It does not invalide an index to change its categories.
     def categories_for(item)
