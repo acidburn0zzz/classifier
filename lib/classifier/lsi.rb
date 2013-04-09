@@ -75,7 +75,7 @@ module Classifier
 
     def categories
         @items.each do |item| 
-            yield categories_for item
+            return categories_for item
         end
     end
     
