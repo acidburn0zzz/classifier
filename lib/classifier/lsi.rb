@@ -25,7 +25,7 @@ module Classifier
   # please consult Wikipedia[http://en.wikipedia.org/wiki/Latent_Semantic_Indexing].
   class LSI
     
-    attr_reader :word_list, :categories
+    attr_reader :word_list
     attr_accessor :auto_rebuild
     
     # Create a fresh index.
@@ -71,6 +71,10 @@ module Classifier
     #
     def <<( item )
       add_item item
+    end
+
+    def categories
+        self.items.each{|item| yield self.categories_for item}
     end
     
     # Returns the categories for a given indexed items. You are free to add and remove
