@@ -25,7 +25,7 @@ module Classifier
   # please consult Wikipedia[http://en.wikipedia.org/wiki/Latent_Semantic_Indexing].
   class LSI
     
-    attr_reader :word_list
+    attr_reader :word_list, :categories
     attr_accessor :auto_rebuild
     
     # Create a fresh index.
