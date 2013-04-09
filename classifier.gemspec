@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{classifier}
-  s.version = "0.0.1"
+  s.version = "0.0.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Lucas Carlson"]
-  s.date = %q{2013-04-03}
+  s.date = %q{2013-04-09}
   s.description = %q{A general classifier module to allow Bayesian and other types of classifications.}
   s.email = %q{lucas@rufy.com}
   s.executables = ["bayes.rb", "summarize.rb"]
@@ -19,12 +19,14 @@ Gem::Specification.new do |s|
   ]
   s.files = [
     "Gemfile",
+    "Gemfile.lock",
     "LICENSE",
     "README",
     "Rakefile",
     "VERSION",
     "bin/bayes.rb",
     "bin/summarize.rb",
+    "classifier.gemspec",
     "install.rb",
     "lib/classifier.rb",
     "lib/classifier/bayes.rb",
