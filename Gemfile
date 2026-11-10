@@ -12,5 +12,5 @@ group :development do
   gem "bundler"
   gem "jeweler"
   gem "simplecov"
-  gem "yard", "~> 0.7"
+  gem "yard", "~> 0.9"
 end
